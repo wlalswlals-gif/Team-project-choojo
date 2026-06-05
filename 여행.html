@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>뭐볼HANDONG - 여행 추천</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+
+.hero{
+    height:400px;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* 섹션 제목 */
+.section-title{
+    text-align:center;
+    margin:60px 0 30px;
+    font-size:36px;
+}
+
+/* 카드 영역 */
+.video-container{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+    padding-bottom:70px;
+}
+
+/* 카드 */
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* TOP3 */
+.top3{
+    width:90%;
+    margin:auto;
+    padding-bottom:70px;
+}
+
+.rank-box{
+    background:white;
+    margin-bottom:15px;
+    padding:20px;
+
+    border-left:6px solid #2563eb;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* 푸터 */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🎬 뭐볼HANDONG</div>
+
+    <nav>
+        <ul>
+           <li><a href="메인페이지.html">홈</a></li>
+            <li><a href="여행.html">여행</a></li>
+            <li><a href="운동.html">운동</a></li>
+            <li><a href="음악.html">음악</a></li>
+            <li><a href="밥 친구.html">밥 친구</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>✈️ 여행 추천</h1>
+    <p>바쁜 한동인을 위해 방구석에서 떠나는</p>
+    <p>세계 여행 시작!</p>
+</section>
+
+<h2 class="section-title">🔥 추천 여행 영상</h2>
+
+<section class="video-container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>낭만의 봄 런던 여행</h3>
+            <p>자전거를 타고 여유롭게 즐기는 런던 브이로그</p>
+            <a class="btn" href="https://youtu.be/bKvxe5dwg38" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>스위스 액티비티 로드트립</h3>
+            <p>동화 같은 대자연과 짜릿한 패러글라이딩</p>
+            <a class="btn" href="https://youtu.be/xLTCivIB4kU" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>세계에서 가장 작은 나라</h3>
+            <p>바다 위 콘크리트 요새 '시랜드 공국' 탐방기</p>
+            <a class="btn" href="https://youtu.be/_qS25jVVw-s" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>도쿄 찐텐션 투어</h3>
+            <p>해리포터 스튜디오부터 디즈니씨까지 완벽 정복</p>
+            <a class="btn" href="https://youtu.be/usCEVYCZogk" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1571474004502-c1def214ac6d?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>대만 타이베이 힐링 먹방</h3>
+            <p>지우펀 홍등가와 끊임없이 들어가는 야시장 맛집들</p>
+            <a class="btn" href="https://youtu.be/Zp5LldONF8w?si=7ak8kNxdLnbFq8J-" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>뉴욕 일상 브이로그</h3>
+            <p>화려한 타임스퀘어와 뉴욕 감성 가득한 일상 속으로</p>
+            <a class="btn" href="https://youtu.be/_3IU4Ekql1s?si=DQTT57Z7UJ3n8A_4" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+</section>
+
+<h2 class="section-title">🏆 한동인 인기 여행지 TOP 3</h2>
+
+<section class="top3">
+
+    <div class="rank-box">
+        🥇 - 스위스
+    </div>
+
+    <div class="rank-box">
+        🥈 - 런던
+    </div>
+
+    <div class="rank-box">
+        🥉 -  도쿄
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 뭐볼HANDONG | Front-End Team Project</p>
+</footer>
+
+</body>
+</html>

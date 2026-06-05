@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>뭐볼HANDONG - 밥친구 추천</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+
+.hero{
+    height:400px;
+    background:linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* 섹션 제목 */
+.section-title{
+    text-align:center;
+    margin:60px 0 30px;
+    font-size:36px;
+}
+
+/* 카드 영역 */
+.video-container{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+    padding-bottom:70px;
+}
+
+/* 카드 */
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* TOP3 */
+.top3{
+    width:90%;
+    margin:auto;
+    padding-bottom:70px;
+}
+
+.rank-box{
+    background:white;
+    margin-bottom:15px;
+    padding:20px;
+
+    border-left:6px solid #2563eb;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* 푸터 */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🎬 뭐볼HANDONG</div>
+
+    <nav>
+        <ul>
+          <li><a href="메인페이지.html">홈</a></li>
+            <li><a href="여행.html">여행</a></li>
+            <li><a href="운동.html">운동</a></li>
+            <li><a href="음악.html">음악</a></li>
+            <li><a href="밥 친구.html">밥 친구</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>🍚밥친구</h1>
+    <p>오늘 뭐 볼지 고민할 시간도 없는 한동인을 위해</p>
+    <p>밥 먹을 때 같이 보면 좋은 유튜브 추천🍚</p>
+</section>
+
+<h2 class="section-title">🍚밥친구🍚</h2>
+
+<section class="video-container">
+
+    <div class="card">
+        <img src="https://yt3.googleusercontent.com/NU1DrWW9UoIsX99YKWClBDSqKD0RpBa2X02C3QIWky2a_XSAEpQD1LxVU50_jx2QFNMWcrkO=s900-c-k-c0x00ffffff-no-rj">
+        <div class="card-content">
+            <h3>태요미네</h3>
+            <p>말도 잘하고 귀엽고 웃긴 태요미네</p>
+            <a class="btn" href="https://youtu.be/srlJzVl6n6Y?si=sJjGQaAzXztsZ0gE">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://yt3.googleusercontent.com/UOaguip7Vw970SR4Oue9YzR2oF64pqZuEqeAyXqy3FonoVQdpurf8lpKCqSWDjlbpOIgzZnK=s900-c-k-c0x00ffffff-no-rj">
+        <div class="card-content">
+            <h3>에픽하이</h3>
+            <p>숨 쉬듯이 웃긴 에픽하이 아저씨들이랑 밥 먹기</p>
+            <a class="btn" href="https://youtu.be/KS8yJKDOyHE?si=g3o6Q0rXKnHdgIXm" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://yt3.googleusercontent.com/xC4SMShldcXEAmbKFD2wV7tzUufL2vUDFY5YIPr-AL_Zcz0NPom84EFfKIaFSmlP9xKDOdTWKA=s900-c-k-c0x00ffffff-no-rj">
+        <div class="card-content">
+            <h3>권또또</h3>
+            <p>테토녀 또또가 당신의 식사를 엄청 응원합니다</p>
+            <a class="btn" href="https://youtu.be/drkxAmbk9tg?si=8lXSRVyhqLaHCJdu" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalrdTzs9rr3F1GLKOsW10MKyi69xH595Qdg&s">
+        <div class="card-content">
+            <h3>퀸가비</h3>
+            <p>디바마을에서 퀸과 함께 식사하기</p>
+            <a class="btn" href="https://youtu.be/H8BqV91Mhe0?si=vuAxA1rPWM7TxaXR" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_ny3_7x7wGswXASawBIme4eazHVZAFR_3Dt-gw6p_zBu9c=s900-c-k-c0x00ffffff-no-rj">
+        <div class="card-content">
+            <h3>유병재</h3>
+            <p>끊이지 않는 컨텐츠로 끊이지 않게 밥 먹기</p>
+            <a class="btn" href="https://youtu.be/dcJUPNvpnYI?si=lHfBZjIo5Td48kWq" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_l2dPj4s4Mx0qh3CarWH48OAAJ9Hxb7Hl8-crZSnFE8zA=s900-c-k-c0x00ffffff-no-rj">
+        <div class="card-content">
+            <h3>찰스엔터</h3>
+            <p>나도 마치.. 친구가 된 거 같아 쓸쓸하지 않게 밥 먹기</p>
+            <a class="btn" href="https://youtu.be/5t2vhpTCRC4?si=nQkAT_JauCwt1bjs" target="_blank">보러가기</a>
+        </div>
+    </div>
+
+</section>
+
+<h2 class="section-title">🏆 한동인 인기 밥친구 TOP 3</h2>
+
+<section class="top3">
+
+    <div class="rank-box">
+        🥇 1위 - 에픽하이
+    </div>
+
+    <div class="rank-box">
+        🥈 2위 - 퀸가비 / 찰스엔터
+    </div>
+
+    <div class="rank-box">
+        🥉 3위 - 태요미네
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 뭐볼HANDONG | Front-End Team Project</p>
+</footer>
+
+</body>
+</html>
