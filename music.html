@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뭐볼HANDONG - () 추천</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background: #f5f7fa;
+        color: #333;
+      }
+
+      header {
+        background: #0f172a;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #60a5fa;
+      }
+
+      .hero {
+        height: 400px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("https://i.pinimg.com/736x/ab/c0/04/abc0042570cb57eb14a9226bf419945e.jpg");
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 22px;
+      }
+
+      /* 섹션 제목 */
+      .section-title {
+        text-align: center;
+        margin: 60px 0 30px;
+        font-size: 36px;
+      }
+
+      /* 카드 영역 */
+      .video-container {
+        width: 90%;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+
+        padding-bottom: 70px;
+      }
+
+      /* 카드 */
+      .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+
+      /* TOP3 */
+      .top3 {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 70px;
+      }
+
+      .rank-box {
+        background: white;
+        margin-bottom: 15px;
+        padding: 20px;
+
+        border-left: 6px solid #2563eb;
+
+        border-radius: 10px;
+
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      /* 푸터 */
+      footer {
+        background: #0f172a;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🎬 뭐볼HANDONG</div>
+
+      <nav>
+        <ul>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="travel.html">여행</a></li>
+            <li><a href="workout.html">운동</a></li>
+            <li><a href="music.html">음악</a></li>
+            <li><a href="eat.html">밥 친구</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>🎧 뮤직플리 추천</h1>
+      <p>오늘 뭐 들을지 고민인 한동인을 위해</p>
+      <p>취향저격 플레이리스트 추천</p>
+    </section>
+
+    <h2 class="section-title">🎶모두의 취향을 위한 플리 모음집🎧</h2>
+
+    <section class="video-container">
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/8d/d9/53/8dd9536b8a86f10a87340bfeb4b1be0f.jpg"
+        />
+        <div class="card-content">
+          <h3>Under the Summer Sun</h3>
+          <p>무더운 여름을 식혀줄 청량한 멜로디</p>
+          <a
+            class="btn"
+            href="https://www.youtube.com/watch?v=qEa8N22OJoY"
+            target="_blank"
+            >보러가기</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/3e/cd/e0/3ecde01ff5ed0f19fc87c3d73aac4490.jpg"
+        />
+        <div class="card-content">
+          <h3>지치고 힘든 당신을 위한 찬양</h3>
+          <p>기도 찬양 플레이리스트</p>
+          <a
+            class="btn"
+            href="https://www.youtube.com/watch?v=pEt89CrE-6A"
+            target="_blank"
+            >보러가기</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/ec/89/47/ec894755b3a6ca6df4a9b412bf335f1c.jpg"
+        />
+        <div class="card-content">
+          <h3>1990, 서울</h3>
+          <p>옛날 노래 좋아하는 사람 다 모여</p>
+          <a class="btn" href="https://www.youtube.com/watch?v=9htmB8ECR1g"
+            >보러가기</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/8b/e7/ee/8be7eeb6ae8bc822f7060beec7d681f3.jpg"
+        />
+        <div class="card-content">
+          <h3>16주차를 보낼 당신을 위해</h3>
+          <p>집중력을 향상 시켜줄 플리</p>
+          <a class="btn" href="https://www.youtube.com/watch?v=wjR4ObKmfOU"
+            >보러가기</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/96/a4/7a/96a47a4c53f6e7ae7d993f9f328199d1.jpg"
+        />
+        <div class="card-content">
+          <h3>드라마 영화 OST</h3>
+          <p>어디서 많이 들어봤는데 ..</p>
+          <a
+            class="btn"
+            href="https://www.youtube.com/watch?v=af9TZv2lgw8&t=580s"
+            >보러가기</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/0a/8d/e0/0a8de0cffb39b5a6eaf70a547bae7b6d.jpg"
+        />
+        <div class="card-content">
+          <h3>케이팝 고인물이 추천하는 플리</h3>
+          <p>시험기간에는 듣지 마세요</p>
+          <a class="btn" href="https://www.youtube.com/watch?v=uf9TNPYiwk4"
+            >보러가기</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">🏆 한동인 인기 뮤직플리 TOP 3</h2>
+
+    <section class="top3">
+      <div class="rank-box">🥇 1위 - 16주차를 보낼 당신을 위해 플리</div>
+
+      <div class="rank-box">🥈 2위 - 케이팝 고인물이 추천하는 플리</div>
+
+      <div class="rank-box">🥉 3위 - 지치고 힘든 당신을 위한 찬양 플리</div>
+    </section>
+
+    <footer>
+      <p>© 2026 뭐볼HANDONG | Front-End Team Project</p>
+    </footer>
+  </body>
+</html>
